@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat">
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Base.Theme.AppCompat" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#E30D81</item>
+        <item name="colorPrimaryDark">#C51162</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="fragment_text">
+        <item name="android:textColor">#ffacacac</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+</resources>

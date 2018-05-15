@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.designtest">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultOfAnd" />
+        <activity android:name=".ResultOfOr" />
+        <activity android:name=".ResultOfXor" />
+        <activity android:name=".ResultOfLinear" />
+        <activity android:name=".ResultOfBinary" />
+        <activity android:name=".BubbleSort" />
+        <activity android:name=".InsertionSort" />
+        <activity android:name=".SelectionSort" />
+        <activity android:name=".QuickSort"></activity>
+    </application>
+
+</manifest>

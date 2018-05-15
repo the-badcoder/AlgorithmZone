@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ALGORITHM ZONE</string>
+    <string name="and_name">Bitwise AND</string>
+    <string name="or_name">Bitwise OR</string>
+    <string name="xor_name">Bitwise XOR</string>
+    <string name="play_name">PLAY</string>
+    <string name="done_name">DONE</string>
+    <string name="tab1_name">Tab1</string>
+    <string name="tab2_name">Tab2</string>
+    <string name="button_name">Login</string>
+    <string name="Opearations_name">#STEP DESCRIPTIONS:</string>
+    <string name="push_name">Operation - :</string>
+    <string name="pop_name">Operation - :</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
