@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class BubbleSort extends AppCompatActivity implements View.OnClickListener{
 
-    Button ans;
+    Button ans, code_button, time_complexity;
     int n, target, i = 0, loop = 0;
     private TextView finalans;
     private TextView[] txtnum;
@@ -39,6 +39,8 @@ public class BubbleSort extends AppCompatActivity implements View.OnClickListene
         finalans.setMovementMethod(new ScrollingMovementMethod());
 
         ans = findViewById(R.id.playbuttonID);
+        code_button = findViewById(R.id.codebuttonID);
+        time_complexity = findViewById(R.id.timeComplexitybuttonID);
 
         Intent intent = getIntent();
         String t1 = intent.getStringExtra("t1");
@@ -58,12 +60,20 @@ public class BubbleSort extends AppCompatActivity implements View.OnClickListene
         txtnum[5].setText(t6);
 
         ans.setOnClickListener(this);
+        code_button.setOnClickListener(this);
+        time_complexity.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.playbuttonID) {
            bubblesort();
+        }
+        else if (v.getId() == R.id.codebuttonID){
+            Intent intent = new Intent(this, CodeOfBubbleSort.class); startActivity(intent);
+        }
+        else if (v.getId() == R.id.timeComplexitybuttonID){
+            Intent intent = new Intent(this, TimeComplexityOfBubbleSort.class); startActivity(intent);
         }
     }
 

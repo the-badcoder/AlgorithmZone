@@ -16,7 +16,7 @@ public class BinaryFragment extends Fragment implements View.OnClickListener{
 
     EditText et1, et2, et3, et4, et5, et6, et7, et8, et9;
     TextView textView;
-    Button result;
+    Button result, code_button, time_complexity;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +36,12 @@ public class BinaryFragment extends Fragment implements View.OnClickListener{
         et9 = v.findViewById(R.id.etextID9);
 
         result = v.findViewById(R.id.resultID1);
+        code_button = v.findViewById(R.id.codebuttonID);
+        time_complexity = v.findViewById(R.id.timeComplexitybuttonID);
+
         result.setOnClickListener( this );
+        code_button.setOnClickListener(this);
+        time_complexity.setOnClickListener(this);
 
         return v;
     }
@@ -69,6 +74,12 @@ public class BinaryFragment extends Fragment implements View.OnClickListener{
             } else {
                 Toast.makeText( getContext(), "Please Give Valid Input", Toast.LENGTH_SHORT).show();
             }
+        }
+        else if (v.getId() == R.id.codebuttonID){
+            Intent intent = new Intent(getActivity(), CodeOfBinary.class); startActivity(intent);
+        }
+        else if (v.getId() == R.id.timeComplexitybuttonID){
+            Intent intent = new Intent(getActivity(), TimeComplexityOfBinary.class); startActivity(intent);
         }
     }
 }

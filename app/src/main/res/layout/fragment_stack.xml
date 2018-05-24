@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@android:color/transparent"
     tools:context=".MainActivity">
+
 
     <EditText
         android:id="@+id/numberInput"
@@ -13,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:hint="Enter Values:"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Values to push:"
         android:maxLength="2"
         android:maxLines="1"
         android:singleLine="true" />
@@ -23,6 +24,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:layout_below="@+id/numberInput">
 
         <Button
@@ -30,19 +32,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
-            android:text="Push" />
+            android:text="Push"
+            android:background="@drawable/buttonshape"/>
 
         <Button
             android:id="@+id/pop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pop" />
+            android:layout_marginLeft="10dp"
+            android:text="Pop"
+            android:background="@drawable/buttonshape"/>
 
         <Button
             android:id="@+id/randomInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Random Input" />
+            android:layout_marginLeft="10dp"
+            android:text="  Random Input  "
+            android:background="@drawable/buttonshape"/>
 
     </LinearLayout>
 
@@ -50,7 +57,7 @@
         android:id="@+id/LinearOut"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="120dp">
+        android:layout_marginTop="125dp">
 
         <ListView
             android:id="@+id/listView"
@@ -85,11 +92,30 @@
             <TextView
                 android:id="@+id/opNameID"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="250dp"
                 android:layout_marginTop="10dp"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/detailsbuttonID"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/details_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/buttonshape01"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

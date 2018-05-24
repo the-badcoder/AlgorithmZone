@@ -3,13 +3,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#800000"
+    android:background="@color/colorPrimaryDarkTransparent"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/layout_top"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:orientation="vertical">
 
         <!--<ImageView-->
@@ -23,8 +24,8 @@
 
             <Button
                 android:id="@+id/title_bar_left_menu"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
                 android:layout_gravity="left|center_vertical"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/titlebar_menu_selector" />
@@ -34,14 +35,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="7dp"
-                android:text="   ALGORITHM ZONE"
-                android:textColor="#999999"
-                android:textSize="24sp" />
+                android:text="Algorithm Zone"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/title_bar_right_menu"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
                 android:layout_gravity="right|center_vertical"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/titlebar_menu_selector" />

@@ -4,10 +4,11 @@
     <style name="AppTheme" parent="Base.Theme.AppCompat">
 
         <!-- Customize your theme here. -->
+
     </style>
     <style name="Base.Theme.AppCompat" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#E30D81</item>
-        <item name="colorPrimaryDark">#C51162</item>
+        <item name="colorPrimary">#3f4d9c</item>
+        <item name="colorPrimaryDark">#181c54</item>
         <item name="colorAccent">#FF4081</item>
     </style>
 
@@ -15,5 +16,7 @@
         <item name="android:textColor">#ffacacac</item>
         <item name="android:textSize">25sp</item>
     </style>
+
+
 
 </resources>

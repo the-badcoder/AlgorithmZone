@@ -23,7 +23,24 @@
         <activity android:name=".BubbleSort" />
         <activity android:name=".InsertionSort" />
         <activity android:name=".SelectionSort" />
-        <activity android:name=".QuickSort"></activity>
+        <activity android:name=".QuickSort" />
+        <activity android:name=".TimeComplexityOfBinary" />
+        <activity android:name=".TimeComplexityOfLinear" />
+        <activity android:name=".TimeComplexityOfBubbleSort" />
+        <activity android:name=".TimeComplexityOfInsetionSort" />
+        <activity android:name=".TimeComplexityOfStack" />
+        <activity android:name=".TimeComplexityOfQueue" />
+        <activity android:name=".CodeOfBinary" />
+        <activity android:name=".CodeOfBubbleSort" />
+        <activity android:name=".CodeOfInsertionSort" />
+        <activity android:name=".CodeOfLinear" />
+        <activity android:name=".TimeComplexityOfSelectionSort" />
+        <activity android:name=".CodeOfSelectionSort" />
+        <activity android:name=".DetailsAnd" />
+        <activity android:name=".DetailsOr" />
+        <activity android:name=".DetailsXor" />
+        <activity android:name=".DetailsStack" />
+        <activity android:name=".DetailsQueue"></activity>
     </application>
 
 </manifest>

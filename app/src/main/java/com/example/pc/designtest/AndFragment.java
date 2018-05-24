@@ -18,7 +18,7 @@ public class AndFragment extends Fragment implements View.OnClickListener{
 
     EditText et1, et2, et3, et4, et5, et6, et7, et8;
     TextView textView;
-    Button result;
+    Button result, details;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,8 +40,10 @@ public class AndFragment extends Fragment implements View.OnClickListener{
         et7 = v.findViewById(R.id.etextID7);
         et8 = v.findViewById(R.id.etextID8);
         result = v.findViewById(R.id.resultID1);
+        details = v.findViewById(R.id.detailsbuttonID);
 
         result.setOnClickListener( this );
+        details.setOnClickListener( this );
 
         return v;
     }
@@ -69,9 +71,14 @@ public class AndFragment extends Fragment implements View.OnClickListener{
                 intent.putExtra("t7", et7.getText().toString());
                 intent.putExtra("t8", et8.getText().toString());
                 startActivity(intent);
-            } else {
+            }
+            else {
                 Toast.makeText( getContext(), "Please Give Valid Input", Toast.LENGTH_SHORT).show();
             }
+        }
+        else if (v.getId() == R.id.detailsbuttonID){
+            Intent intent = new Intent(getActivity(), DetailsAnd.class);
+            startActivity(intent);
         }
     }
 }

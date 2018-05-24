@@ -4,27 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/transparent"
     tools:context=".LinearFragment">
-
-    <TextView
-        android:id="@+id/tviewID1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        android:text="LINEAR SEARCH"
-        android:textAlignment="center"
-        android:textIsSelectable="true"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
+
+        <TextView
+            android:id="@+id/tviewID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter Inputs:  (0-99),\nThen A Value For Searching"
+            android:textColor="@color/LightOrange"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -39,7 +36,9 @@
                     android:cursorVisible="true"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext"
+                    />
 
                 <EditText
                     android:id="@+id/etextID2"
@@ -48,7 +47,8 @@
                     android:cursorVisible="true"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext"/>
 
                 <EditText
                     android:id="@+id/etextID3"
@@ -57,7 +57,8 @@
                     android:cursorVisible="true"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext"/>
 
                 <EditText
                     android:id="@+id/etextID4"
@@ -74,7 +75,8 @@
                     android:cursorVisible="true"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext"/>
             </LinearLayout>
 
         <LinearLayout
@@ -98,20 +100,52 @@
                 android:cursorVisible="true"
                 android:inputType="number"
                 android:maxLength="2"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:imeOptions="actionNext"/>
 
         </LinearLayout>
 
 
+        <Button
+            android:id="@+id/resultID1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_margin="25dp"
+            android:text="Done"
+            android:background="@drawable/buttonshape_normal"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
             <Button
-                android:id="@+id/resultID1"
-                android:layout_width="150dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/done_name"
-                android:textAlignment="center"
+                android:id="@+id/codebuttonID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/code_name"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="@drawable/buttonshape02"/>
+            <Button
+                android:id="@+id/timeComplexitybuttonID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/time_complexity_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/buttonshape02"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -15,7 +15,7 @@ import java.util.Collections;
 
 public class ResultOfBinary extends AppCompatActivity implements View.OnClickListener{
 
-    Button ans;
+    Button ans, time_complexity, code_button;
     int n, target, i = 0;
     private TextView finalans;
     private TextView[] txtnum;
@@ -45,6 +45,8 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
         finalans.setMovementMethod(new ScrollingMovementMethod());
 
         ans = findViewById(R.id.playbuttonID);
+        time_complexity = findViewById(R.id.timeComplexitybuttonID);
+        code_button = findViewById(R.id.codebuttonID);
 
         int temp;
 
@@ -95,6 +97,8 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
         txtnum[6].setText(t7);*/
 
         ans.setOnClickListener(this);
+        time_complexity.setOnClickListener(this);
+        code_button.setOnClickListener(this);
 
     }
 
@@ -102,6 +106,9 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         if (v.getId() == R.id.playbuttonID) {
             binarySearch();
+        }
+        else if(v.getId() == R.id.timeComplexitybuttonID) {
+            Intent intent = new Intent( this, TimeComplexityOfBinary.class); startActivity(intent);
         }
     }
 

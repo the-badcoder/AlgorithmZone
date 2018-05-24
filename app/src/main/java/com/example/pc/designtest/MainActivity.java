@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ResideMenuItem itemBit;
     private ResideMenuItem itemOperations;
     private ResideMenuItem itemSearching;
-    private ResideMenuItem itemComplexity;
 
     /**
      * Called when the activity is first created.
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // attach to current activity;
         resideMenu = new ResideMenu(this);
 
-        resideMenu.setBackground(R.drawable.back2 );
+        resideMenu.setBackground(R.drawable.background_color_05 );
         resideMenu.attachToActivity(this);
         resideMenu.setMenuListener(menuListener);
         //valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip.
@@ -56,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         itemBit = new ResideMenuItem(this, R.drawable.binary, "Bit Manipulations");
         itemOperations = new ResideMenuItem(this, R.drawable.datastructure, "Data Structure");
         itemSearching = new ResideMenuItem( this, R.drawable.search, "Searching");
-        itemComplexity = new ResideMenuItem( this, R.drawable.icon_calendar, "Time Complexity");
 
         itemHome.setOnClickListener(this);
         itemProfile.setOnClickListener(this);
@@ -65,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         itemBit.setOnClickListener(this);
         itemOperations.setOnClickListener(this);
         itemSearching.setOnClickListener(this);
-        itemComplexity.setOnClickListener(this);
 
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
@@ -73,8 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //resideMenu.addMenuItem(itemSettings, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemBit, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemOperations, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemSearching, ResideMenu.DIRECTION_RIGHT);
-        resideMenu.addMenuItem(itemComplexity, ResideMenu.DIRECTION_RIGHT );
+        resideMenu.addMenuItem(itemSearching, ResideMenu.DIRECTION_LEFT);
         // You can disable a direction by setting ->
         // resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
 
@@ -119,11 +115,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             SlideStop();
             changeFragment( new SearchFragment() );
-        }
-        else if( view == itemComplexity )
-        {
-            SlideStop();
-            //changeFragment( new ComplexityFragment() );
         }
 
         resideMenu.closeMenu();
