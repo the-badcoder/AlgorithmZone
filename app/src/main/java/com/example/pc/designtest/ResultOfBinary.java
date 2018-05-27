@@ -29,8 +29,8 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.result_of_binary);
 
         numbers = new int[8];
-        txtnum = new TextView[9];
-        resultnum = new TextView[9];
+        txtnum = new TextView[10];
+        resultnum = new TextView[10];
 
         txtnum[0] = findViewById(R.id.txt1);
         txtnum[1] = findViewById(R.id.txt2);
@@ -97,8 +97,8 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
         txtnum[6].setText(t7);*/
 
         ans.setOnClickListener(this);
-        time_complexity.setOnClickListener(this);
-        code_button.setOnClickListener(this);
+        //time_complexity.setOnClickListener(this);
+        //code_button.setOnClickListener(this);
 
     }
 
@@ -108,13 +108,14 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
             binarySearch();
         }
         else if(v.getId() == R.id.timeComplexitybuttonID) {
-            Intent intent = new Intent( this, TimeComplexityOfBinary.class); startActivity(intent);
+            Intent intent = new Intent( this, TimeComplexityOfBinary.class);
+            startActivity(intent);
         }
     }
 
     public void binarySearch()
     {
-        ret( 0, 6 );
+        ret( 0, 7 );
     }
 
     public void ret( final int x, final int y )
@@ -124,7 +125,7 @@ public class ResultOfBinary extends AppCompatActivity implements View.OnClickLis
             public void run() {
                 //txtnum[x].setBackgroundResource(R.drawable.circle_shape_red);
 
-                if( i == 11 )
+                if( i == 12 )
                 {
                     Toast.makeText( ResultOfBinary.this, "WE FAILED", Toast.LENGTH_LONG ).show();
                 }

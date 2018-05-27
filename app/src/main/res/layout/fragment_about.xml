@@ -23,7 +23,7 @@
             android:id="@+id/profile_sir"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/sorting"
+            android:src="@drawable/pic_mak"
             app:civ_border_color="@color/DimGray"
             app:civ_border_width="2dp"
             android:layout_gravity="center"/>
@@ -71,11 +71,39 @@
             android:layout_margin="5dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_tareq"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pic_tareq"
+                app:civ_border_color="@color/DimGray"
+                app:civ_border_width="2dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tareq_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_tanvir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Tareq Aziz Khan\nBatch: 39\nDept. of CSE\nLeading Univerity, Sylhet"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_tanvir"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/search"
+                android:src="@drawable/pic_tanvir"
                 app:civ_border_color="@color/DimGray"
                 app:civ_border_width="2dp" />
 
@@ -104,7 +132,7 @@
                 android:layout_height="100dp"
                 app:civ_border_color="@color/DimGray"
                 app:civ_border_width="2dp"
-                android:src="@drawable/datastructure"
+                android:src="@drawable/pic_nafi"
                 android:layout_gravity="center"/>
 
             <TextView
@@ -115,34 +143,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:text="Md. Numan Ahmed\nBatch: 39\nDept. of CSE\nLeading Univerity, Sylhet"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimaryDark"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="220dp"
-            android:orientation="vertical"
-            android:layout_margin="5dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_tareq"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/check_symbol"
-                app:civ_border_color="@color/DimGray"
-                app:civ_border_width="2dp"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:id="@+id/tareq_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/profile_tanvir"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:text="Tareq Aziz Khan\nBatch: 39\nDept. of CSE\nLeading Univerity, Sylhet"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryDark"/>
 

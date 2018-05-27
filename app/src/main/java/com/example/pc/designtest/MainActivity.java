@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //itemSettings = new ResideMenuItem(this, R.drawable.icon_settings, "Settings");
         itemBit = new ResideMenuItem(this, R.drawable.binary, "Bit Manipulations");
         itemOperations = new ResideMenuItem(this, R.drawable.datastructure, "Data Structure");
-        itemSearching = new ResideMenuItem( this, R.drawable.search, "Searching");
+        itemSearching = new ResideMenuItem( this, R.drawable.search, "Search Algo");
         itemAbout = new ResideMenuItem( this, R.drawable.about_logo, "About");
 
         itemHome.setOnClickListener(this);
@@ -193,7 +193,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         AlertDialog alertDialog = aleartdialog.create();
         aleartdialog.show();
-
-
     }
 }

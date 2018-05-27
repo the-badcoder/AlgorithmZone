@@ -31,29 +31,19 @@ public class QueueFragment extends Fragment implements View.OnClickListener{
 
     int i = 0;
 
-    public QueueFragment() {
-        // Required empty public constructor
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_queue, container, false);
 
-
         textView = view.findViewById( R.id.opNameID );
         textView1 = view.findViewById( R.id.opTypeID );
-        et = (EditText) view.findViewById(R.id.numberInput);
-        pushButton = (Button) view.findViewById(R.id.push);
-        popButton = (Button) view.findViewById(R.id.pop);
-        randomButton = (Button) view.findViewById(R.id.randomInput);
-        lv = (ListView) view.findViewById(R.id.listView);
+        et = view.findViewById(R.id.numberInput);
+        pushButton = view.findViewById(R.id.push);
+        popButton =  view.findViewById(R.id.pop);
+        randomButton = view.findViewById(R.id.randomInput);
+        lv =  view.findViewById(R.id.listView);
         details = view.findViewById(R.id.detailsbuttonID);
 
         pushButton.setOnClickListener(this);
@@ -107,7 +97,7 @@ public class QueueFragment extends Fragment implements View.OnClickListener{
             et.getText().clear();
             arrayAdapter.clear();
             Random random = new Random();
-            for (int i = 1; i <= 15; ++i) {
+            for (int i = 0; i < 50; ++i) {
                 int n = random.nextInt(100);
                 String input = Integer.toString((int)n);
                 myList.add(i, input);

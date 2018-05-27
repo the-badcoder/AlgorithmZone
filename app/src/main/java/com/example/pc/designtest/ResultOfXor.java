@@ -88,9 +88,9 @@ public class ResultOfXor extends AppCompatActivity implements View.OnClickListen
                 int l = Integer.valueOf(txtnum[x].getText().toString());
                 int r = Integer.valueOf(txtnum[y].getText().toString());
 
-                int o = 1, z = 0;
+                int o = 0, z = 1;
 
-                print(l, r, (((l == 1 && r == 1) || (l == 0 && r == 0)) ? z : 1));
+                print(l, r, (((l == 1 && r == 1) || (l == 0 && r == 0)) ? 0 : 1));
 
                 txtnum[x].setBackgroundResource(R.drawable.circle_shape_orange);
                 txtnum[y].setBackgroundResource(R.drawable.circle_shape_orange);
@@ -100,11 +100,11 @@ public class ResultOfXor extends AppCompatActivity implements View.OnClickListen
                 String one = "1";
                 String zero = "0";
 
-                if ((l == 1 && r == 1)) {
-                    resultnum[i].setText(one);
+                if ((l == 1 && r == 1) || ( l == 0 && r == 0 )) {
+                    resultnum[i].setText(zero);
                     resultnum[i].setBackgroundResource(R.drawable.circle_shape_red);
                 } else {
-                    resultnum[i].setText(zero);
+                    resultnum[i].setText(one);
                     resultnum[i].setBackgroundResource(R.drawable.circle_shape_red);
                 }
                 i = x - 1;

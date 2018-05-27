@@ -1,7 +1,6 @@
 package com.example.pc.designtest;
 
 import android.content.Intent;
-import android.icu.text.UnicodeSetSpanner;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -12,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
-import java.sql.BatchUpdateException;
 
 public class ProfileFragment extends Fragment implements View.OnClickListener {
 
