@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Best Case"
+                android:text="Best"
                 android:textColor="@color/Black"
                 android:textSize="20sp"
                 android:textStyle="normal"
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Average Case"
+                android:text="Average"
                 android:textColor="@color/Black"
                 android:textSize="20sp"
                 android:textStyle="normal"
@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Worst Case"
+                android:text="Worst"
                 android:textColor="@color/Black"
                 android:textSize="20sp"
                 android:textStyle="normal"

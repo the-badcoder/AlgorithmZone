@@ -12,14 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:layout_gravity="left">
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selection Sort: "
+            android:text="Visualization of Selection Sort: "
             android:textColor="@color/background_holo_light"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"/>
@@ -150,7 +150,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/finaltextID"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="220dp"
         android:layout_marginLeft="0dp"
         android:background="@color/colorPrimaryDark"
         android:cursorVisible="true"
@@ -163,5 +163,10 @@
         android:textColor="#ffffff"
         android:textSize="19sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"/>
 
 </LinearLayout>

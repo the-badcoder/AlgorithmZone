@@ -1,6 +1,7 @@
 package com.example.pc.designtest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -23,7 +24,7 @@ public class StackFragment extends Fragment implements View.OnClickListener{
 
     EditText et;
     TextView textView, textView1;
-    Button pushButton, popButton, randomButton;
+    Button pushButton, popButton, randomButton, details;
     ListView lv;
     ArrayList<String> myList = new ArrayList<>();
     ArrayAdapter arrayAdapter;
@@ -51,9 +52,12 @@ public class StackFragment extends Fragment implements View.OnClickListener{
         popButton =  view.findViewById(R.id.pop);
         randomButton =  view.findViewById(R.id.randomInput);
         lv = view.findViewById(R.id.listView);
+        details = view.findViewById(R.id.detailsbuttonID);
+
         pushButton.setOnClickListener(this);
         popButton.setOnClickListener(this);
         randomButton.setOnClickListener(this);
+        details.setOnClickListener(this);
 
         arrayAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, myList);
         this.lv.setAdapter((ListAdapter)arrayAdapter);
@@ -107,6 +111,10 @@ public class StackFragment extends Fragment implements View.OnClickListener{
                 myList.add(i, input);
             }
             arrayAdapter.notifyDataSetChanged();
+        }
+        else if (view.getId() == R.id.detailsbuttonID) {
+            Intent intent = new Intent(getActivity(), DetailsStack.class);
+            startActivity(intent);
         }
     }
 }

@@ -7,4 +7,15 @@
     android:background="@color/colorWhite"
     tools:context="com.example.pc.designtest.DetailsStack">
 
+    <TextView
+        android:gravity="center"
+        android:id="@+id/detailsId01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/details_stack"
+        android:textColor="@color/Black"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
 </LinearLayout>

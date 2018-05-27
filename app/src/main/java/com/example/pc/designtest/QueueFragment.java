@@ -1,6 +1,7 @@
 package com.example.pc.designtest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -23,10 +24,11 @@ public class QueueFragment extends Fragment implements View.OnClickListener{
 
     EditText et;
     TextView textView, textView1;
-    Button pushButton, popButton, randomButton;
+    Button pushButton, popButton, randomButton, details;
     ListView lv;
     ArrayList<String> myList = new ArrayList<>();
     ArrayAdapter arrayAdapter;
+
     int i = 0;
 
     public QueueFragment() {
@@ -52,9 +54,12 @@ public class QueueFragment extends Fragment implements View.OnClickListener{
         popButton = (Button) view.findViewById(R.id.pop);
         randomButton = (Button) view.findViewById(R.id.randomInput);
         lv = (ListView) view.findViewById(R.id.listView);
+        details = view.findViewById(R.id.detailsbuttonID);
+
         pushButton.setOnClickListener(this);
         popButton.setOnClickListener(this);
         randomButton.setOnClickListener(this);
+        details.setOnClickListener( this );
 
         arrayAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, myList);
         this.lv.setAdapter((ListAdapter)arrayAdapter);
@@ -102,12 +107,16 @@ public class QueueFragment extends Fragment implements View.OnClickListener{
             et.getText().clear();
             arrayAdapter.clear();
             Random random = new Random();
-            for (int i = 0; i < 50; ++i) {
+            for (int i = 1; i <= 15; ++i) {
                 int n = random.nextInt(100);
                 String input = Integer.toString((int)n);
                 myList.add(i, input);
             }
             arrayAdapter.notifyDataSetChanged();
+        }
+        else if (view.getId() == R.id.detailsbuttonID){
+            Intent intent = new Intent(getActivity(), DetailsQueue.class);
+            startActivity(intent);
         }
     }
 }

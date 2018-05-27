@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/colorWhite"
+    tools:context=".AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/linearLayout2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_sir"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sorting"
+            app:civ_border_color="@color/DimGray"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/sir_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_tanvir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:text="Made under the guidance of\nMd Asaduzzaman Khan\nAssistant Professor\nDept. of CSE\nLeading University"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:gravity="start" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:text="Developed By:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:layout_marginTop="180dp"
+        android:id="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_tanvir"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/search"
+                app:civ_border_color="@color/DimGray"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tanvir_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_tanvir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Md. Tanvir Hassan\nBatch: 39\nDept. of CSE\nLeading Univerity, Sylhet"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_numan"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_color="@color/DimGray"
+                app:civ_border_width="2dp"
+                android:src="@drawable/datastructure"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/numan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_tanvir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Md. Numan Ahmed\nBatch: 39\nDept. of CSE\nLeading Univerity, Sylhet"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_tareq"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/check_symbol"
+                app:civ_border_color="@color/DimGray"
+                app:civ_border_width="2dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tareq_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_tanvir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Tareq Aziz Khan\nBatch: 39\nDept. of CSE\nLeading Univerity, Sylhet"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="14dp"
+        android:text="Source Code: \nwww.github.com/the-badcoder/AlgorithmZone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

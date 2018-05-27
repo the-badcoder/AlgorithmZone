@@ -17,12 +17,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_gravity="left">
+            android:layout_gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quick Sort: "
+                android:text="Visualization of Quick Sort: "
                 android:textColor="@color/background_holo_light"
                 android:textSize="25sp"
                 android:textStyle="bold"

@@ -16,8 +16,38 @@
     <string name="Opearations_name">#Step Descriptions:</string>
     <string name="push_name">Operation - :</string>
     <string name="pop_name">Operation - :</string>
+    <string name="exit_text">Do you want to quit?</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="CODE">This is my code</string>
+
+    <string name="details_stack">
+        Basic features of STACK:\n
+        Stack is an ordered list of similar data type.
+Stack is a LIFO(Last in First out) structure or we can say FILO(First in Last out).
+push() function is used to insert new elements into the Stack and pop() function is used to remove an element from the stack. Both insertion and removal are allowed at only one end of Stack called Top.
+Stack is said to be in Overflow state when it is completely full and is said to be in Underflow state if it is completely empty.
+    </string>
+
+    <string name="details_queue">
+        Basic features of QUEUE:\n
+Like stack, queue is also an ordered list of elements of similar data types.
+Queue is a FIFO( First in First Out ) structure.
+Once a new element is inserted into the Queue, all the elements inserted before the new element in the queue must be removed, to remove the new element.
+peek( ) function is oftenly used to return the value of first element without dequeuing it.
+    </string>
+
+    <string name="details_and">
+        AND\n\nA bitwise AND takes two equal-length binary representations and performs the logical AND operation on each pair of the corresponding bits, by multiplying them. Thus, if both bits in the compared position are 1, the bit in the resulting binary representation is 1 (1 × 1 = 1); otherwise, the result is 0 (1 × 0 = 0 and 0 × 0 = 0).
+    </string>
+
+    <string name="details_or">
+        OR\n\nA bitwise OR takes two bit patterns of equal length and performs the logical inclusive OR operation on each pair of corresponding bits. The result in each position is 0 if both bits are 0, while otherwise the result is 1
+    </string>
+    <string name="details_xor">
+        XOR\n\nA bitwise XOR takes two bit patterns of equal length and performs the logical exclusive OR operation on each pair of corresponding bits. The result in each position is 1 if only the first bit is 1 or only the second bit is 1, but will be 0 if both are 0 or both are 1. In this we perform the comparison of two bits, being 1 if the two bits are different, and 0 if they are the same.
+    </string>
 
 </resources>

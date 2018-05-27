@@ -42,7 +42,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext" />
 
                 <EditText
                     android:id="@+id/etextID2"
@@ -52,7 +53,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext" />
 
                 <EditText
                     android:id="@+id/etextID3"
@@ -62,7 +64,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext" />
 
                 <EditText
                     android:id="@+id/etextID4"
@@ -72,7 +75,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext" />
             </LinearLayout>
 
             <LinearLayout
@@ -89,7 +93,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext" />
 
                 <EditText
                     android:id="@+id/etextID6"
@@ -99,7 +104,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionNext" />
 
                 <EditText
                     android:id="@+id/etextID7"
@@ -110,7 +116,8 @@
                     android:inputType="number"
                     android:maxLength="1"
                     android:textAlignment="center"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:imeOptions="actionNext" />
 
                 <EditText
                     android:id="@+id/etextID8"
@@ -120,7 +127,8 @@
                     android:digits="01"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:imeOptions="actionDone" />
             </LinearLayout>
 
             <Button

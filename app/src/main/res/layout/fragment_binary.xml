@@ -17,7 +17,7 @@
             android:id="@+id/tviewID1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please Enter Inputs:  (0-99),\n Then A Value For Searching"
+            android:text="Please Enter Input:  (0-99)\nand then a value to search"
             android:textColor="@color/LightOrange"
             android:textSize="20sp"
             android:layout_gravity="center"
@@ -37,7 +37,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext" />
 
             <EditText
                 android:id="@+id/etextID2"
@@ -47,7 +47,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext" />
 
             <EditText
                 android:id="@+id/etextID3"
@@ -56,7 +56,8 @@
                 android:cursorVisible="true"
                 android:inputType="number"
                 android:maxLength="2"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:imeOptions="actionNext" />
 
             <EditText
                 android:id="@+id/etextID4"
@@ -66,8 +67,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"
-                />
+                android:imeOptions="actionNext" />
             <EditText
                 android:id="@+id/etextID5"
                 android:layout_width="40dp"
@@ -76,7 +76,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext" />
             <EditText
                 android:id="@+id/etextID6"
                 android:layout_width="40dp"
@@ -85,8 +85,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"
-                />
+                android:imeOptions="actionNext" />
             <EditText
                 android:id="@+id/etextID7"
                 android:layout_width="40dp"
@@ -95,7 +94,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext" />
             <EditText
                 android:id="@+id/etextID8"
                 android:layout_width="40dp"
@@ -104,7 +103,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext" />
         </LinearLayout>
 
         <LinearLayout
@@ -129,7 +128,7 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionDone" />
 
         </LinearLayout>
 
@@ -172,6 +171,8 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:background="@drawable/buttonshape02"/>
+
+
 
         </LinearLayout>
 

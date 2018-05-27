@@ -1,8 +1,9 @@
 package com.example.pc.designtest;
 
-import android.content.Context;
+import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -11,17 +12,20 @@ import android.view.View;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ResideMenu resideMenu;
     //private Context mContext;
-    private ResideMenuItem itemHome;
+    private ResideMenuItem itemHome, itemHome1;
     private ResideMenuItem itemProfile;
     private ResideMenuItem itemCalendar;
     private ResideMenuItem itemSettings;
     private ResideMenuItem itemBit;
     private ResideMenuItem itemOperations;
     private ResideMenuItem itemSearching;
+    private ResideMenuItem itemAbout;
 
     /**
      * Called when the activity is first created.
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setUpMenu();
         if (savedInstanceState == null)
             changeFragment(new HomeFragment());
+
     }
 
     private void setUpMenu() {
@@ -45,32 +50,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resideMenu.attachToActivity(this);
         resideMenu.setMenuListener(menuListener);
         //valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip.
-        resideMenu.setScaleValue(0.5f);
+        resideMenu.setScaleValue(0.6f);
 
         // create menu items;
         itemHome = new ResideMenuItem(this, R.drawable.icon_home, "Home");
+        itemHome1 = new ResideMenuItem(this, R.drawable.icon_home, "Home");
         itemProfile = new ResideMenuItem(this, R.drawable.sorting, "Sorting");
         //itemCalendar = new ResideMenuItem(this, R.drawable.icon_calendar, "Calendar");
-        itemSettings = new ResideMenuItem(this, R.drawable.icon_settings, "Settings");
+        //itemSettings = new ResideMenuItem(this, R.drawable.icon_settings, "Settings");
         itemBit = new ResideMenuItem(this, R.drawable.binary, "Bit Manipulations");
         itemOperations = new ResideMenuItem(this, R.drawable.datastructure, "Data Structure");
         itemSearching = new ResideMenuItem( this, R.drawable.search, "Searching");
+        itemAbout = new ResideMenuItem( this, R.drawable.about_logo, "About");
 
         itemHome.setOnClickListener(this);
+        itemHome1.setOnClickListener(this);
         itemProfile.setOnClickListener(this);
         //itemCalendar.setOnClickListener(this);
-        itemSettings.setOnClickListener(this);
+        //itemSettings.setOnClickListener(this);
         itemBit.setOnClickListener(this);
         itemOperations.setOnClickListener(this);
         itemSearching.setOnClickListener(this);
+        itemAbout.setOnClickListener(this);
 
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(itemHome1, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
         //resideMenu.addMenuItem(itemCalendar, ResideMenu.DIRECTION_RIGHT);
         //resideMenu.addMenuItem(itemSettings, ResideMenu.DIRECTION_RIGHT);
+        resideMenu.addMenuItem(itemAbout, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemBit, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemOperations, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemSearching, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(itemSearching, ResideMenu.DIRECTION_RIGHT);
         // You can disable a direction by setting ->
         // resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
 
@@ -99,11 +110,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (view == itemHome) {
             changeFragment(new HomeFragment());
-        } else if (view == itemProfile) {
-            changeFragment(new ProfileFragment());
         }
-        else if (view == itemSettings) {
-            changeFragment(new SettingsFragment());
+        else if( view == itemHome1 )
+        {
+            changeFragment(new HomeFragment() );
+        }
+        else if (view == itemProfile) {
+            changeFragment(new ProfileFragment());
         } else if (view == itemBit) {
             SlideStop();
             changeFragment(new BitsActivity() );
@@ -115,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             SlideStop();
             changeFragment( new SearchFragment() );
+        }else if (view == itemAbout) {
+            changeFragment(new AboutFragment());
         }
 
         resideMenu.closeMenu();
@@ -151,5 +166,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
         resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        final AlertDialog.Builder aleartdialog;
+
+        aleartdialog = new AlertDialog.Builder(MainActivity.this);
+        aleartdialog.setIcon(R.drawable.check_symbol);
+        aleartdialog.setTitle(R.string.exit_text);
+        aleartdialog.setCancelable(false);
+
+        aleartdialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        aleartdialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        AlertDialog alertDialog = aleartdialog.create();
+        aleartdialog.show();
+
+
     }
 }

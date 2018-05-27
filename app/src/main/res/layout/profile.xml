@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please Enter Inputs: (0-99)"
+            android:text="Please Enter Input: (0-99)"
             android:textSize="25sp"
             android:gravity="center"
             android:textColor="@color/LightOrange" />
@@ -38,7 +38,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:textAlignment="center"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionNext" />
 
         <EditText
             android:id="@+id/etextID2"
@@ -48,7 +48,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:textAlignment="center"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionNext" />
 
         <EditText
             android:id="@+id/etextID3"
@@ -58,7 +58,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:textAlignment="center"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionNext" />
 
         <EditText
             android:id="@+id/etextID4"
@@ -68,7 +68,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:textAlignment="center"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionNext" />
 
         <EditText
             android:id="@+id/etextID5"
@@ -78,7 +78,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:textAlignment="center"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionNext" />
 
         <EditText
             android:id="@+id/etextID6"
@@ -88,7 +88,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:textAlignment="center"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionDone" />
     </LinearLayout>
 
     <LinearLayout
