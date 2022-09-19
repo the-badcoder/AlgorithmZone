@@ -1,49 +1,28 @@
 # AlgorithmZone
 
-> This project is the first attempt to implement an academic programming platform system on this model. <br> Its aims are:<br>
-- Create a system where teachers can create sessions.
-- Students can enroll in those sessions.
-- Student can submit their assignments/lab tasks.
-- Make a checker which will check the user's output of code against valid output and provide a verdict.
-- Should have a mechanism to evaluate the submitted solutions against the underlying test cases and generate verdict.
-- Make a ACL (Access Control List) for both users and admins.
-- A blog where users (teachers) and admins can share their suggestions on any particular topic.
-
 ## Table of Contents
 * [Goals](#goals)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [Authors](#authors)
+<!---* [Authors](#authors) -->
 
 
 ## Goals
-Our goal was to create an automated system for our university CSE students where they could submit their programming-related assignments without any hassle. Furthermore, the university's competitive programming coach can track the activities of current contestants and create practice programming problems and arrange regular contests for them.
+The objective was to create a system where Computer Science students can learn the processes of fundamental Algorithms & Data Structures with the help of visualizations.
 
 
 ## Technologies Used
-- Laravel
-- GNU Toolkit [To compile C/C++]
-- JDK [To compile Java]
-- XAMPP
-- NPM
-- Composer
-- Bootstrap
-- Javascript
-- JQuery
+
+<img src="https://user-images.githubusercontent.com/25181517/183049399-2a3c5d95-f544-4421-b40d-806c38b4adfd.png" width="45" height="45"> <img src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png" width="45" height="45"> <img src="https://user-images.githubusercontent.com/25181517/189716630-fe6c084c-6c66-43af-aa49-64c8aea4a5c2.png" width="45" height="45"> <img src="https://user-images.githubusercontent.com/25181517/117364277-fc4eb280-aebd-11eb-8769-a3583c6a2037.png" width="45" height="45"> 
+
 
 ## Features
-- Teachers can create sessions.
-- The user can participate in the session.
-- Admin has the authority to rejudge submissions.
-- The user can view their current standing.
-- The user can view the contest list. 
-- Users can create, edit, and update their profiles/biographies.
-- Access Control List, which distinguishes between users, administrators, and super administrators.
-- A user's profile, including personal information and submission history, should be retrievable.
-- Each question does have hidden test cases.
-- A mechanism to evaluate submitted solutions against the underlying test cases and generate a verdict. 
-- The user can inspect his or her own submission code as well as the submissions of others. 
+* Users can provide different input.
+* Users can understand the processes of different algorithms with animations.
+* The Algorithms & Data Structures are: <br> Searching: Binary search, linear search <br> Data Structures: Stack, queue <br> Bit manipulations: AND, OR, XOR.
+* Users can read the text of how the algorithms or data structures work.
+* Time complexity & Psuedocodes provided.
 
 
 ## Screenshots
