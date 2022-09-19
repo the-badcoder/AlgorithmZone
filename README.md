@@ -48,13 +48,11 @@ Our goal was to create an automated system for our university CSE students where
 
 ## Gifs
 
-<img src="/images/stack-gif.gif" width="250" height="400"/>
+<img src="/images/stack.gif" width="250" height="400"/>  | <img src="/images/sorting.gif"/>
 
 
 ## Screenshots 
 
-> ![Admin Dashboard](./images/Admin_Dashboard.png)
 -----------------------------------------------
 
 ## Authors
-> ![Example screenshot](./images/about.png)
