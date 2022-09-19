@@ -65,4 +65,26 @@ Our goal was to create an automated system for our university CSE students where
 
 -----------------------------------------------
 
+> ##### XOR - Operation
+
+<img src="./images/Xor/a.jpg" width="300" height="600"> | <img src="./images/Xor/b.jpg" width="300" height="600"> 
+<img src="./images/Xor/c.jpg" width="300" height="600"> | <img src="./images/Xor/d.jpg" width="300" height="600"> 
+<img src="./images/Xor/e.jpg" width="300" height="600"> | <img src="./images/queue/f.jpg" width="300" height="600">
+
+-----------------------------------------------
+
+> ##### Linear Search
+
+<img src="./images/LinearSearch/a.jpg" width="300" height="600"> | <img src="./images/LinearSearch/b.jpg" width="300" height="600"> 
+<img src="./images/LinearSearch/c.jpg" width="300" height="600"> | <img src="./images/LinearSearch/d.jpg" width="300" height="600"> 
+<img src="./images/LinearSearch/e.jpg" width="300" height="600"> | <img src="./images/LinearSearch/f.jpg" width="300" height="600">
+
+------------------------------------------------
+
+> ##### Binary Search
+
+<img src="./images/BinarySearch/a.jpg" width="300" height="600"> | <img src="./images/BinarySearch/b.jpg" width="300" height="600"> 
+<img src="./images/BinarySearch/c.jpg" width="300" height="600"> | <img src="./images/BinarySearch/d.jpg" width="300" height="600"> 
+<img src="./images/BinarySearch/e.jpg" width="300" height="600"> 
+
 ## Authors
