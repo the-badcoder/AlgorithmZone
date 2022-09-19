@@ -48,7 +48,21 @@ Our goal was to create an automated system for our university CSE students where
 
 ## Screenshots
 
-<img src="./images/a.jpg" width="300" height="600"> | <img src="./images/b.jpg" width="300" height="600"> | <img src="./images/c.jpg" width="300" height="600"> | <img src="./images/d.jpg" width="300" height="600"> | <img src="./images/e.jpg" width="300" height="600"> | <img src="./images/f.jpg" width="300" height="600"> | <img src="./images/g.jpg" width="300" height="600"> 
+> #### Stack 
+
+<img src="./images/stack/a.jpg" width="300" height="600"> | <img src="./images/stack/c.jpg" width="300" height="600">
+<img src="./images/stack/d.jpg" width="300" height="600"> | <img src="./images/stack/e.jpg" width="300" height="600"> 
+<img src="./images/stack/g.jpg" width="300" height="600"> | <img src="./images/stack/h.jpg" width="300" height="600">
+
+-----------------------------------------------
+
+> #### Bubble Sort 
+
+<img src="./images/queue/a.jpg" width="300" height="600"> | <img src="./images/queue/b.jpg" width="300" height="600"> 
+<img src="./images/queue/c.jpg" width="300" height="600"> | <img src="./images/queue/d.jpg" width="300" height="600"> 
+<img src="./images/queue/e.jpg" width="300" height="600"> | <img src="./images/queue/f.jpg" width="300" height="600">
+<img src="./images/queue/q.jpg" width="300" height="600"> | <img src="./images/queue/r.jpg" width="300" height="600"> 
+
 -----------------------------------------------
 
 ## Authors
