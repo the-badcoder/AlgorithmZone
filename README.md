@@ -46,13 +46,9 @@ Our goal was to create an automated system for our university CSE students where
 - The user can inspect his or her own submission code as well as the submissions of others. 
 
 
-## Gifs
+## Screenshots
 
-<img src="/images/stack.gif" width="250" height="400"/>  | <img src="/images/sorting.gif"/>
-
-
-## Screenshots 
-
+<img src="./images/a.jpg" width="300" height="600"> | <img src="./images/b.jpg" width="300" height="600"> | <img src="./images/c.jpg" width="300" height="600"> | <img src="./images/d.jpg" width="300" height="600"> | <img src="./images/e.jpg" width="300" height="600"> | <img src="./images/f.jpg" width="300" height="600"> | <img src="./images/g.jpg" width="300" height="600"> 
 -----------------------------------------------
 
 ## Authors
