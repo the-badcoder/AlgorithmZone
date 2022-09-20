@@ -28,8 +28,8 @@ The objective was to create a system where Computer Science students can learn t
 
 > #### Stack 
 
-<img src="./images/stack/a.jpg" width="300" height="600" style="float:left; padding-right:100px"> | <img src="./images/stack/c.jpg" width="300" height="600"> <br>
-<img src="./images/stack/d.jpg" width="300" height="600" style="float:left; padding-right:100px"> | <img src="./images/stack/e.jpg" width="300" height="600"> <br>
+<img src="./images/stack/a.jpg" width="300" height="600" style="float:left; padding-right:100px">  <img src="./images/stack/c.jpg" width="300" height="600" style="float:right; padding-right:10px"> <br>
+<img src="./images/stack/d.jpg" width="300" height="600" style="float:left; padding-right:100px">  <img src="./images/stack/e.jpg" width="300" height="600"> <br>
 <img src="./images/stack/g.jpg" width="300" height="600" style="float:left; padding-right:100px"> | <img src="./images/stack/h.jpg" width="300" height="600">
 
 -----------------------------------------------
